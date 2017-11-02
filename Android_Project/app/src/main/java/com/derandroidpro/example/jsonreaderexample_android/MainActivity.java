@@ -61,9 +61,9 @@ public class MainActivity extends AppCompatActivity {
             // at first create the ArrayList where our persons will be stored in:
             ArrayList<Person> persons = new ArrayList<>();
             // since there always might be errors when doing internet things, we have to use a try -
-            // catch case to prevent the app from crashing:
+            // catch to prevent the app from crashing:
             try {
-                // create an URL (object) from our URL-String that says. where the json object is stored on the server:
+                // create an URL (object) from our URL-String that says where the json object is stored on the server:
                 URL jsonFileUrl = new URL(jsonFileUrlString[0]);
                 // create an InputStreamReader from an InputStream that we get from our URL object.
                 // This InputStreamReader can be used by the JsonReader to read the content from the json file:
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 // Now we've entered the array that consists out of multiple persons. Now we have
                 // to read out person by person, or let's say object by object. For this purpose we
                 // use the hasNext() Method of the jsonReader. This method will return true as long as
-                // there are still unread objects inside the array:
+                // there are unread objects inside the array:
                 while(jsonReader.hasNext()){
                     // the beginning of every object obviously is a "{", so use .beginObject():
                     jsonReader.beginObject();
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                     // these three parameters from every person in the json script and put the
                     // information into the person's object.
                     Person currentPerson = new Person();
-                    // We've entered the current object of the person, so we have to cycle through
+                    // We've entered the current json object of the person, so we have to cycle through
                     // every parameter that is attached to the current object. The jsonReader.hasNext()-Method
                     // will return true as long as there are unread parameters inside the current object:
                     while (jsonReader.hasNext()){
