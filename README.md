@@ -12,6 +12,29 @@ I wrote lots of comments in the code, so it should be easy to understand.
 - [AndroidManifest.xml](/Android_Project/app/src/main/AndroidManifest.xml) (Don't forget the permissions in the manifest!)
 - [activity_main.xml](/Android_Project/app/src/main/res/layout/activity_main.xml) (The layout of the app)
 
+### The JSON-Script:
+```json
+{
+  "user":[
+    {
+      "name":"John Doe",
+      "profession":"Doctor",
+      "age":27
+    },
+    {
+      "name":"Mike Miller",
+      "profession":"Musician",
+      "age":40
+    },
+    {
+      "name":"Bob Graham",
+      "profession":"Programmer",
+      "age":32
+    }
+  ]
+}
+```
+
 ### The Result:
 
 <img src="/Screenshot1.png" height="550px" />
