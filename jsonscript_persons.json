@@ -1,0 +1,19 @@
+{
+  "user":[
+    {
+      "name":"John Doe",
+      "profession":"Doctor",
+      "age":27
+    },
+    {
+      "name":"Mike Miller",
+      "profession":"Musician",
+      "age":40
+    },
+    {
+      "name":"Bob Graham",
+      "profession":"Programmer",
+      "age":32
+    }
+  ]
+}
