@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         tv1 = findViewById(R.id.tv1);
         // check if internet is available: no internet - no json file from the internet :D
         if(internetAvailable()) {
-            // run the AsyncTask that is used to do the everything else:
+            // run the AsyncTask that is used to do everything else:
             new ReadJsonAsyncTask().execute(jsonFileUrl);
         } else {
             // if internet is not available, inform the user using a simple toast:
